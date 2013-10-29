@@ -396,6 +396,7 @@
     <Content Include="libs\bootmetro\content\font\IcoMoon.eot" />
     <Content Include="libs\bootmetro\content\font\IcoMoon.ttf" />
     <Content Include="libs\bootmetro\content\font\IcoMoon.woff" />
+    <None Include="Properties\PublishProfiles\Production.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
