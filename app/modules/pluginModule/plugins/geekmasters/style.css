@@ -1,0 +1,15 @@
+﻿#geekmasters #img {
+    background:url('./assets/geek.png') no-repeat;
+    background-size:contain;
+    width:120px;
+    height:100px;
+    margin-top:10px;
+    margin-left: 30px;
+    /*background-position:center;
+    margin-left: 35px;
+    margin-top:25px;*/
+}
+
+#geekmasters .textover-wrapper {
+    margin-top:-21px;
+}

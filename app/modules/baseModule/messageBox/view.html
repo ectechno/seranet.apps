@@ -1,0 +1,13 @@
+<div id="messageModal" class="modal hide fade message" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h3 id="messageModalLabel" data-bind="text: messageTitle"></h3>
+    </div>
+    <div class="modal-body">
+        <p data-bind="html:message"></p>
+    </div>
+    <div class="modal-footer">        
+        <button class="btn btn-primary" data-bind="click: ok">Yes</button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">No</button>
+    </div>
+</div>

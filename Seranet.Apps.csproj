@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35B07ED1-4806-42BC-AA5A-A28C48F49FD1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XApps.Web</RootNamespace>
+    <AssemblyName>XApps.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\application.js" />
+    <Content Include="app\core\context.js" />
+    <Content Include="app\core\dom-controller.js" />
+    <Content Include="app\core\helpers\localizer.js" />
+    <Content Include="app\core\helpers\logger.js" />
+    <Content Include="app\core\helpers\mediator.js" />
+    <Content Include="app\core\helpers\router.js" />
+    <Content Include="app\core\helpers\settings.js" />
+    <Content Include="app\core\helpers\styler.js" />
+    <Content Include="app\core\helpers\_helpers_.js" />
+    <Content Include="app\core\url-controller.js" />
+    <Content Include="app\core\view-template.js" />
+    <Content Include="app\core\_boiler_.js" />
+    <Content Include="app\main.js" />
+    <Content Include="app\modules\baseModule\charmBar\style.css" />
+    <Content Include="app\modules\baseModule\controlBar\viewmodel.js" />
+    <Content Include="app\modules\baseModule\charmBar\component.js" />
+    <Content Include="app\modules\baseModule\charmBar\view.html" />
+    <Content Include="app\modules\baseModule\charmBar\viewmodel.js" />
+    <Content Include="app\modules\baseModule\controlBar\component.js" />
+    <Content Include="app\modules\baseModule\controlBar\view.html" />
+    <Content Include="app\modules\baseModule\messageBox\component.js" />
+    <Content Include="app\modules\baseModule\messageBox\view.html" />
+    <Content Include="app\modules\baseModule\messageBox\viewmodel.js" />
+    <Content Include="app\modules\baseModule\module.js" />
+    <Content Include="app\modules\baseModule\settings.js" />
+    <Content Include="app\modules\pluginModule\component.js" />
+    <Content Include="app\modules\pluginModule\module.js" />
+    <Content Include="app\modules\pluginModule\plugins\99x\assets\nnx1.jpg" />
+    <Content Include="app\modules\pluginModule\plugins\99x\assets\nnx2.jpg" />
+    <Content Include="app\modules\pluginModule\plugins\99x\assets\nnx3.jpg" />
+    <Content Include="app\modules\pluginModule\plugins\99x\assets\nnx4.jpg" />
+    <Content Include="app\modules\pluginModule\plugins\99x\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\99x\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\99x\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\99x\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\99x\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\99x\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\agile\assets\agile.png" />
+    <Content Include="app\modules\pluginModule\plugins\agile\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\agile\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\agile\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\agile\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\agile\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\agile\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\blog\assets\logo.png" />
+    <Content Include="app\modules\pluginModule\plugins\blog\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\blog\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\blog\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\blog\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\blog\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\blog\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\assets\ccc1.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\assets\ccc2.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\assets\ccc3.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\assets\ccc5.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\assets\ccc6.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\ccc\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\assets\cloud.png" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\cloud\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\csr\assets\csrlogo1.png" />
+    <Content Include="app\modules\pluginModule\plugins\csr\assets\csrnew.png" />
+    <Content Include="app\modules\pluginModule\plugins\csr\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\assets\timeport.png" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\assets\geek.png" />
+    <Content Include="app\modules\pluginModule\plugins\mail\assets\mail.png" />
+    <Content Include="app\modules\pluginModule\plugins\mail\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\mail\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\mail\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\mail\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\mail\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\mail\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\fix\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\assets\gm.png" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\geekmasters\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\csr\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\csr\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\csr\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\csr\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\csr\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\assets\dot.png" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\dotitude\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\facebook\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\hris\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\jira\assets\jira.png" />
+    <Content Include="app\modules\pluginModule\plugins\jira\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\jira\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\jira\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\jira\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\jira\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\jira\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\assets\labrats.png" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\labrats\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\linkedin\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\portal\assets\appbarprocess.png" />
+    <Content Include="app\modules\pluginModule\plugins\portal\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\portal\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\portal\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\portal\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\portal\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\portal\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\sports\assets\sc1.png" />
+    <Content Include="app\modules\pluginModule\plugins\sports\assets\sc2.png" />
+    <Content Include="app\modules\pluginModule\plugins\sports\assets\sc3.png" />
+    <Content Include="app\modules\pluginModule\plugins\sports\assets\sc5.png" />
+    <Content Include="app\modules\pluginModule\plugins\sports\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\sports\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\sports\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\sports\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\sports\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\sports\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\assets\reply.png" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\assets\retweet.png" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\assets\twitter-icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\twitter\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\fix\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\fix\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\fix\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\fix\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\fix\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\hris\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\hris\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\hris\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\hris\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\hris\viewmodel.js" />
+    <Content Include="app\modules\modules.js" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\assets\yammer.png" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\yammer\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\viewmodel.js" />
+    <Content Include="app\modules\pluginModule\plugins\youtube\icon.png" />
+    <Content Include="app\modules\pluginModule\settings.js" />
+    <Content Include="app\modules\pluginModule\tileControls\component.js" />
+    <Content Include="app\modules\pluginModule\tileControls\view.html" />
+    <Content Include="app\modules\pluginModule\tileControls\viewmodel.js" />
+    <Content Include="app\settings.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="libs\boilerplate\groundwork.js" />
+    <Content Include="libs\bootmetro\content\css\bootmetro-charms.css" />
+    <Content Include="libs\bootmetro\content\css\bootmetro-tiles.css" />
+    <Content Include="libs\bootmetro\content\css\bootmetro.css" />
+    <Content Include="libs\bootmetro\content\css\bootmetro1.css" />
+    <Content Include="libs\bootmetro\content\css\bootstrap-responsive.css" />
+    <Content Include="libs\bootmetro\content\css\bootstrap.css" />
+    <Content Include="libs\bootmetro\content\css\custom.css" />
+    <Content Include="libs\bootmetro\content\css\datepicker.css" />
+    <Content Include="libs\bootmetro\content\css\demo-old.css" />
+    <Content Include="libs\bootmetro\content\css\demo.css" />
+    <Content Include="libs\bootmetro\content\css\icomoon.css" />
+    <Content Include="libs\bootmetro\content\css\metro-ui-dark.css" />
+    <Content Include="libs\bootmetro\content\css\metro-ui-light.css" />
+    <Content Include="libs\bootmetro\content\css\pic_livetile.css" />
+    <Content Include="libs\bootmetro\content\font\IcoMoon.svg" />
+    <Content Include="libs\bootmetro\content\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="libs\bootmetro\content\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="libs\bootmetro\content\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="libs\bootmetro\content\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="libs\bootmetro\content\ico\fav.ico" />
+    <Content Include="app\modules\pluginModule\plugins\hris\assets\appbar.png" />
+    <Content Include="app\modules\pluginModule\plugins\fix\assets\appbarfix.png" />
+    <Content Include="libs\bootmetro\content\img\explore_logo.png" />
+    <Content Include="libs\bootmetro\content\img\menu\help.png" />
+    <Content Include="libs\bootmetro\content\img\menu\close1.png" />
+    <Content Include="libs\bootmetro\scripts\bootmetro-charms.js" />
+    <Content Include="libs\bootmetro\scripts\bootmetro-panorama.js" />
+    <Content Include="libs\bootmetro\scripts\bootmetro-pivot.js" />
+    <Content Include="libs\bootmetro\scripts\bootmetro.js" />
+    <Content Include="libs\bootmetro\scripts\bootstrap-datepicker.js" />
+    <Content Include="libs\bootmetro\scripts\bootstrap.js" />
+    <Content Include="libs\bootmetro\scripts\bootstrap.min.js" />
+    <Content Include="libs\bootmetro\scripts\demo.js" />
+    <Content Include="libs\bootmetro\scripts\google-code-prettify\jquery.mousewheel.js" />
+    <Content Include="libs\bootmetro\scripts\google-code-prettify\prettify.css" />
+    <Content Include="libs\bootmetro\scripts\google-code-prettify\prettify.js" />
+    <Content Include="libs\bootmetro\scripts\holder.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.autoellipsis.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.blockUI.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.form.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.min.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.mousewheel.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.scrollTo.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.validate.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="libs\bootmetro\scripts\jquery.autoellipsis.js" />
+    <Content Include="libs\bootmetro\scripts\modernizr-2.6.1.min.js" />
+    <Content Include="libs\bootmetro\scripts\mustache.js" />
+    <Content Include="libs\crossroads\crossroads.min.js" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\dataport\viewmodel.js" />
+    <Content Include="libs\flot\jquery.flot.min.js" />
+    <Content Include="libs\flot\jquery.flot.resize.js" />
+    <Content Include="libs\flot\hasher\hasher.min.js" />
+    <Content Include="libs\jquery\jquery-min.js" />
+    <Content Include="libs\jquery\jquery-serialize.js" />
+    <Content Include="libs\jquery\jstree\jstree-1.0-rc3.js" />
+    <Content Include="libs\jquery\jstree\themes\apple\bg.jpg" />
+    <Content Include="libs\jquery\jstree\themes\apple\d.png" />
+    <Content Include="libs\jquery\jstree\themes\apple\dot_for_ie.gif" />
+    <Content Include="libs\jquery\jstree\themes\apple\style.css" />
+    <Content Include="libs\jquery\jstree\themes\apple\throbber.gif" />
+    <Content Include="libs\jscrollpane\jquery.jscrollpane.css" />
+    <Content Include="libs\jscrollpane\jquery.jscrollpane.min.js" />
+    <Content Include="libs\knockout\knockout-2.1.0pre.js" />
+    <Content Include="libs\opentip\opentip-jquery.min.js" />
+    <Content Include="libs\opentip\opentip.css" />
+    <Content Include="libs\pubsub\pubsub-20120708.js" />
+    <Content Include="libs\qunit\qunit-1.9.0.js" />
+    <Content Include="libs\require\domReady.js" />
+    <Content Include="libs\require\i18n.js" />
+    <Content Include="libs\require\path.js" />
+    <Content Include="libs\require\require.js" />
+    <Content Include="libs\require\text.js" />
+    <Content Include="libs\signals\signals.min.js" />
+    <Content Include="libs\sinon\sinon-1.3.4.js" />
+    <Content Include="libs\sinon\sinon-qunit-1.0.0.js" />
+    <Content Include="libs\slimscroll\jquery.slimscroll.js" />
+    <Content Include="libs\slimscroll\slimScrollHorizontal.js" />
+    <Content Include="libs\testr\testr.js" />
+    <Content Include="libs\tileGrid\jQuery.tileGrid.js" />
+    <Content Include="libs\underscore\underscore-1.3.3.js" />
+    <Content Include="main.js" />
+    <Content Include="server\default_plugins.txt" />
+    <Content Include="server\plugins.txt" />
+    <Content Include="tests\core\helpers\mediator.js" />
+    <Content Include="tests\core\helpers\router.js" />
+    <Content Include="tests\core\helpers\settings.js" />
+    <Content Include="tests\index.html" />
+    <Content Include="tests\other\js-encapsulation.js" />
+    <Content Include="tests\other\js-prototypes.js" />
+    <Content Include="tests\qunit-1.9.0.css" />
+    <Content Include="tests\samples.js" />
+    <Content Include="tests\tests.js" />
+    <Content Include="tools\documentation\template\assets\css\external-small.png" />
+    <Content Include="tools\documentation\template\assets\css\logo.png" />
+    <Content Include="tools\documentation\template\assets\css\main.css" />
+    <Content Include="tools\documentation\template\assets\js\tabs.js" />
+    <Content Include="tools\documentation\template\assets\js\yui-prettify.js" />
+    <Content Include="tools\documentation\template\assets\vendor\prettify\CHANGES.html" />
+    <Content Include="tools\documentation\template\assets\vendor\prettify\prettify-min.css" />
+    <Content Include="tools\documentation\template\assets\vendor\prettify\prettify-min.js" />
+    <Content Include="tools\documentation\template\assets\vendor\prettify\README.html" />
+    <Content Include="tools\optimizer\boilerplatejs.build.js" />
+    <Content Include="tools\optimizer\r.js" />
+    <Content Include="tools\snippets\sampleModule1\module.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\component.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\nls\resources.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\nls\sv\resources.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\style.css" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\view.html" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent1\viewmodel.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent2\component.js" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent2\view.html" />
+    <Content Include="tools\snippets\sampleModule1\sampleUIComponent2\viewmodel.js" />
+    <Content Include="tools\snippets\sampleModule1\settings.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tools\documentation\document.bat" />
+    <Content Include="tools\documentation\document.sh" />
+    <Content Include="tools\documentation\README.md" />
+    <Content Include="tools\documentation\template\assets\vendor\prettify\COPYING" />
+    <Content Include="tools\documentation\template\layouts\main.handlebars" />
+    <Content Include="tools\documentation\template\partials\attrs.handlebars" />
+    <Content Include="tools\documentation\template\partials\classes.handlebars" />
+    <Content Include="tools\documentation\template\partials\events.handlebars" />
+    <Content Include="tools\documentation\template\partials\files.handlebars" />
+    <Content Include="tools\documentation\template\partials\index.handlebars" />
+    <Content Include="tools\documentation\template\partials\method.handlebars" />
+    <Content Include="tools\documentation\template\partials\module.handlebars" />
+    <Content Include="tools\documentation\template\partials\props.handlebars" />
+    <Content Include="tools\documentation\template\partials\sidebar.handlebars" />
+    <Content Include="tools\documentation\template\theme.json" />
+    <Content Include="tools\documentation\yuidoc.json" />
+    <Content Include="tools\optimizer\optimizer.bat" />
+    <Content Include="tools\optimizer\optimizer.sh" />
+    <Content Include="tools\optimizer\README.md" />
+    <Content Include="libs\bootmetro\content\font\IcoMoon.eot" />
+    <Content Include="libs\bootmetro\content\font\IcoMoon.ttf" />
+    <Content Include="libs\bootmetro\content\font\IcoMoon.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\modules\pluginModule\plugins\facebook\assets\" />
+    <Folder Include="app\modules\pluginModule\plugins\linkedin\assets\" />
+    <Folder Include="app\modules\pluginModule\plugins\youtube\assets\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54516/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

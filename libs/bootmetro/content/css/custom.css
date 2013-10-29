@@ -1,0 +1,93 @@
+﻿html, body {
+    padding:0px;
+    margin:0px;
+    height:100%;
+}
+body {
+    background-color: transparent;
+}
+
+#page-content {
+    padding:0px;
+    height:100%;
+}
+
+#header-bar {
+    position:fixed;
+    width:100%;
+    background-color:rgba(236, 231, 226, 1);
+    z-index:2;
+}
+
+#widgets-section {
+    padding-top:50px;
+    margin-bottom: -80px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.metro-section {   
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+
+.metro .metro-sections {
+    width: 100%;
+}
+
+.metro .metro-sections {
+    overflow:hidden;
+}
+
+.metro-sections h2 {
+    margin-bottom:10px;
+}
+
+.t-menu-inner {
+    position:absolute;
+    opacity:0;
+    width:45px;
+    height:22px;
+    background-color:#5a5a5a;
+    right:0px;
+
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.t-menu-button {
+    position:relative;
+    float:right;
+    margin:3px;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.t-menu-button:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    opacity: .6;
+    filter: 'alpha(opacity=60)';
+}
+
+.menu-close {
+    background: url('../img/menu/close1.png') no-repeat;
+}
+
+.menu-help {
+    background: url('../img/menu/help.png') no-repeat;
+}
+
+.menushow {
+    opacity: 1;
+    z-index:5;
+}

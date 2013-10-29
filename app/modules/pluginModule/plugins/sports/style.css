@@ -1,0 +1,96 @@
+﻿#sports #live-tile { 
+    position:relative;
+    width:280px;
+    height:135px;
+    overflow:hidden;
+    background-color:#0094ff;
+    color:white;
+    display:block;    
+}
+
+#sports #live-tile a{
+    text-decoration:none;
+}
+
+#sports #live-tile label{
+    font-size:20px;
+    text-align:left;
+    font-family:'Open Sans',Helvetica Neue,Lucida Grande,Arial,Helvetica,Verdana,sans-serif;
+    font-weight: 100;
+}
+
+
+#sports #live-tile p{
+    font-size:12px;
+    text-align:left;
+    margin: 0px 8px;
+    margin:8px;
+    margin-top:38px;
+    height:76px;
+    font-family:'Open Sans',Helvetica Neue,Lucida Grande,Arial,Helvetica,Verdana,sans-serif;
+    font-weight: 100;
+    line-height:140%;
+}
+
+#sports .tile-button {
+    width: 23px;
+    height: 23px;
+    display: block;
+}
+
+
+
+
+#sports .tile-content {
+    display:block;
+    width:280px;
+    height:135px;
+    float:left;
+}
+
+#sports .tile-static {
+    position:absolute;
+    width:280px;
+    height:130px;
+    padding:10px;
+}
+
+#sports .textover-wrapper {
+position: absolute;
+opacity: 0.8;
+bottom: 0;
+width: 240px;
+height: 38px;
+padding: 2px 20px;
+transition: height 0.5s, opacity 8s;
+background-color: inherit;
+opacity: 0.85;
+margin-left:-10px;
+margin-top:-10px;
+}
+
+#sports .textover-wrapper:hover {
+height: 75px;
+transition: height 0.5s, opacity 5s;
+opacity:0.95;
+}
+
+
+#sports #content1 {
+background: url('./assets/sc1.png') no-repeat;
+}
+
+
+#sports #content2 {
+background: url('./assets/sc2.png') no-repeat;
+}
+
+#sports #content3 {
+background: url('./assets/sc3.png') no-repeat;
+}
+
+#sports #content4 {
+background: url('./assets/sc5.png') no-repeat;
+}
+
+

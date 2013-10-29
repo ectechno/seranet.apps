@@ -1,0 +1,8 @@
+["app/modules/pluginModule/plugins/99x/component", "app/modules/pluginModule/plugins/hris/component", 
+"app/modules/pluginModule/plugins/fix/component", "app/modules/pluginModule/plugins/twitter/component", 
+ "app/modules/pluginModule/plugins/portal/component", "app/modules/pluginModule/plugins/jira/component" , 
+ "app/modules/pluginModule/plugins/labrats/component","app/modules/pluginModule/plugins/facebook/component",  
+ "app/modules/pluginModule/plugins/yammer/component" ,"app/modules/pluginModule/plugins/dotitude/component",
+ "app/modules/pluginModule/plugins/blog/component", "app/modules/pluginModule/plugins/dataport/component", 
+  "app/modules/pluginModule/plugins/sports/component" , "app/modules/pluginModule/plugins/csr/component",
+  "app/modules/pluginModule/plugins/youtube/component" ]

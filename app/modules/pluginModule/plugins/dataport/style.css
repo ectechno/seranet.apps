@@ -1,0 +1,10 @@
+﻿#dataport #img {
+background: url('./assets/timeport.png') no-repeat;
+width: 280px;
+height: 135px;
+
+}
+
+#dataport .textover-wrapper {
+    /*margin-top:-10px;*/
+}

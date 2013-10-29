@@ -1,0 +1,211 @@
+﻿.pivot .pivot-headers a {
+    margin: 0 20px 0 0;
+    font-size: 24px;
+    text-transform:lowercase;
+}
+
+#charms .charms-header {
+    padding: 20px 0 0px 0;
+}
+
+#charms .charms-header .title{
+    display:inline-block;
+    cursor:pointer;
+}
+
+#charms #apps-charm-section {
+    margin: 0 0px 30px 0px;
+}
+
+#apps-pivot-headers {
+    margin: 0px 40px 30px 40px;
+}
+
+#charms .listview-container.grid-layout {
+    padding:0px;
+    border:none;
+    background-color: #5a5a5a;
+    height:490px;
+    margin-top:40px;
+}
+
+#charms #apps-charm-section .mediumListIconTextItem {
+    margin:0px;
+    padding:0px;
+    width:303px;
+    border:none;
+    height:70px;
+    background-color:#5a5a5a;
+
+    transition:height 0.5s, opacity 5s;
+    -moz-transition:height 0.5s, opacity 5s;
+    -webkit-transition:height 0.5s, opacity 5s;
+    -o-transition:height 0.5s, opacity 5s;
+    -ms-transition:height 0.5s, opacity 5s;   
+}
+
+#charms #apps-charm-section .mediumListIconTextItem:hover{
+    background-color:#808080;
+    height:70px;
+}
+
+#charms .mediumListIconTextItem img.mediumListIconTextItem-Image {
+    margin:10px 10px 10px 40px;
+    width:50px;
+    height:50px;
+}
+
+#charms .mediumListIconTextItem .mediumListIconTextItem-Detail {
+    margin:10px 0px 0px 0px;
+}
+
+#charms .mediumListIconTextItem .mediumListIconTextItem-Detail h4{
+    width:180px;
+}
+
+#charms .listview-container.grid-layout td {
+     padding:0px;
+}
+
+#charms .mediumListIconTextItem h2, #charms .mediumListIconTextItem h3, #charms .mediumListIconTextItem h4, #charms .mediumListIconTextItem p, #charms .mediumListIconTextItem a {
+    color:#fff;
+}
+
+/* For style jsScrollBar*/
+
+/*.jspDrag {
+    background: rgba(90,90,90,0.5);
+}
+
+.jspDrag:hover {
+    background-color: #444;
+}
+
+.jspTrack {
+    background: #5a5a5a;
+}
+
+.jspTrack:hover {
+    background-color: #aaa;
+}*/
+
+/*add button in the charms panel*/
+.addbtn{
+    background-color: #ec6227;
+    background-image: none;
+    filter: none;
+    border: 0;
+    margin-top:135px;
+    text-shadow: none;
+    text-align:center;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+    outline: none;
+    float:right;
+    position:absolute;
+    top:0px;
+    left:210px;
+    border-right: 0 none #e6e6e6;
+    border-top: 0 none #e6e6e6;
+    border-bottom: 0 none #a2a2a2;
+   
+}
+
+
+    .addbtn:hover {
+    
+    background-color:#FF9966;
+    }
+
+ #charms #apps-charm-section .newmediumListIconTextItem {
+    margin:0px;
+    padding:0px;
+    width:303px;
+    border:none;
+    height:170px;
+    background-color:#5a5a5a;
+}
+
+
+.btntwo {
+    background-color: #e5e5e5;
+    background-image: none;
+    filter: none;
+    border: 0;
+    padding: 7px 14px;
+    text-shadow: none;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    cursor: pointer;
+    outline: none;
+}
+
+.appRow {
+width: 303px;
+height: 70px;
+
+    transition:height 1s, opacity 20s;
+    -moz-transition:height 1s opacity 5s;
+    -webkit-transition:height 1s opacity 5s;
+    -o-transition:height 1s opacity 5s;
+    -ms-transition:height 1s opacity 5s;
+}
+
+/*new div class for charms*/
+.appRowNew {
+    width: 303px;
+    height: 170px;
+
+
+}
+
+#charms #apps-charm-section .expand {
+   
+    position:relative;
+
+    margin:0px;
+    padding:0px;
+    width:303px;
+    border:none;
+    height:170px;
+    background-color:#333;
+
+
+    transition:height 0.5s, opacity 5s;
+    -moz-transition:height 1s opacity 5s;
+    -webkit-transition:height 1s opacity 5s;
+    -o-transition:height 1s opacity 5s;
+    -ms-transition:height 1s opacity 5s;
+
+}
+
+#charms #apps-charm-section .expand:hover {
+    height:170px;
+    background-color:#333;
+}
+
+div.detail {
+    margin:0px 0px 0px 40px;
+    
+    font-size:12px;
+    color:#F8FBEF;
+  width:250px;
+   height:50px;
+}
+
+
+.appText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height:13px;
+    width:250px;
+    text-align:justify;
+    padding-right:15px;
+    height:55px;
+}
+

@@ -1,0 +1,9 @@
+﻿
+#labrats #img {
+    background:url('./assets/labrats.png') no-repeat;
+    width:64px;
+    height:64px;
+    background-size:contain;
+     margin-left: 35px;
+    margin-top:25px;
+}

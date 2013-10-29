@@ -1,0 +1,142 @@
+<div id="charms" class="win-ui-light slide fade" data-bind="css: {in: isOpen}">
+    <div id="theme-charms-section" class="charms-section">
+        <div class="charms-header">
+            <div class="title" data-bind="click: toggleCharmBar">
+                <a href="#" class="close-charms win-backbutton icon-arrow-right-4"></a>
+                <h2 data-bind="text: openedSection"></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ko if: openedSection()=="Settings"-->
+    <div id="settings-charm-section" class="charms-section">
+        <p>
+            Settings<p>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: openedSection()=="Apps"-->
+    <div id="apps-charm-section" class="charms-section">
+
+        <!--  pivot content-->
+        <!--<div id="pivot" class="pivot slide">
+
+            <!--<div id="apps-pivot-headers" class="pivot-headers">
+                <a href="#pivot" data-pivot-index="0">new</a>
+                <a href="#pivot" data-pivot-index="1">hot</a>
+                <a href="#pivot" data-pivot-index="2" class="active">all</a>
+            </div>-->
+
+        <!--<div class="pivot-items">
+                <div id="pivot-item-1" class="pivot-item">-->
+        <!--this is the active item which is visible at first when opening the charms panel-->
+        <!--<div class="scroll-pane listview-container grid-layout">
+                        <table>
+                            <tbody data-bind="foreach: newApps">
+                                <tr>
+                                    <td>
+
+                                        <div class="mediumListIconTextItem" data-bind="click:$parent.showInfo">
+                                            <img data-bind="attr: {src: image}" class="mediumListIconTextItem-Image" />
+
+                                            <div class="mediumListIconTextItem-Detail">
+                                                <h4 data-bind="text:title, click:$parent.showInfo" />
+
+                                            </div>
+                                            <div class="detail">
+                                                <h6 class="appText" data-bind="text:details" />
+
+                                            </div>
+                                            <button id="bb" class="addbtn" style="visibility: visible" data-bind="click:$parent.add">Add</button>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>-->
+        <!--<div id="pivot-item-2" class="pivot-item">
+                    <div class="scroll-pane listview-container grid-layout">
+                        <table>
+                            <tbody
+                                data-bind="foreach: hotApps">
+                                <tr>
+                                    <td>
+
+                                        <div class="mediumListIconTextItem" data-bind="click:$parent.showInfo">
+                                            <img data-bind="attr: { src: image }" class="mediumListIconTextItem-Image" />
+
+                                            <div class="mediumListIconTextItem-Detail">
+                                                <h4 data-bind="text: title, click:$parent.showInfo" />
+
+                                            </div>
+                                            <div class="detail">
+                                                <h6 class="appText" data-bind="text:details" />
+
+                                            </div>
+                                            <button id="Button1" class="addbtn" style="visibility: visible">Add</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>-->
+        <!--<div id="pivot-item-3" class="pivot-item active">
+                    <div class="scroll-pane listview-container grid-layout">
+                           <table>
+                            <tbody data-bind="foreach: allApps">
+                                <tr>
+                                    <td>
+
+                                        <div class="mediumListIconTextItem" data-bind="click:$parent.showInfo">
+                                            <img data-bind="attr: {src: image}" class="mediumListIconTextItem-Image" />
+
+                                            <div class="mediumListIconTextItem-Detail">
+                                                <h4 data-bind="text:title, click:$parent.showInfo" />
+
+                                            </div>
+                                            <div class="detail">
+                                                <h6 class="appText" data-bind="text:details" />
+
+                                            </div>
+                                            <button id="Button2" class="addbtn" style="visibility: visible" data-bind="click:$parent.add, value:path">Add</button>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>-->
+        <!--</div>-->
+
+
+        <div class="scroll-pane listview-container grid-layout">
+            <table>
+                <tbody data-bind="foreach: allApps">
+                    <tr>
+                        <td>
+
+                            <div class="mediumListIconTextItem listItem" data-bind="click:$parent.showInfo">
+                                <img data-bind="attr: {src: image}" class="mediumListIconTextItem-Image" />
+
+                                <div class="mediumListIconTextItem-Detail">
+                                    <h4 data-bind="text:title" />
+                                </div>
+                                <div class="detail">
+                                    <h6 class="appText" data-bind="text:details" />
+                                </div>
+                                <button id="Button2" class="addbtn" style="visibility: visible" data-bind="click:$parent.add, value:path">Add</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- /ko -->
+</div>
+
