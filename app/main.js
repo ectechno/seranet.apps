@@ -8,12 +8,12 @@
 require.config({
     paths : {
         // requirejs plugins in use
-        text : '../libs/require/text',
-        i18n : '../libs/require/i18n',
-        path : '../libs/require/path',
+        text : './libs/require/text',
+        i18n : './libs/require/i18n',
+        path : './libs/require/path',
         // namespace that aggregate core classes that are in frequent use
-        Boiler: './core/_boiler_',
-        mousewheel: '../libs/bootmetro/scripts/jquery.mousewheel.js'
+        Boiler: './app/core/_boiler_',
+        mousewheel: './libs/bootmetro/scripts/jquery.mousewheel.js'
     }
 });
 
