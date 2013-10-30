@@ -136,6 +136,13 @@
     <Content Include="app\modules\pluginModule\plugins\csr\icon.png" />
     <Content Include="app\modules\pluginModule\plugins\dataport\assets\timeport.png" />
     <Content Include="app\modules\pluginModule\plugins\dataport\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\services\assets\dot.png" />
+    <Content Include="app\modules\pluginModule\plugins\services\component.js" />
+    <Content Include="app\modules\pluginModule\plugins\services\config.js" />
+    <Content Include="app\modules\pluginModule\plugins\services\icon.png" />
+    <Content Include="app\modules\pluginModule\plugins\services\style.css" />
+    <Content Include="app\modules\pluginModule\plugins\services\view.html" />
+    <Content Include="app\modules\pluginModule\plugins\services\viewmodel.js" />
     <Content Include="app\modules\pluginModule\plugins\geekmasters\assets\geek.png" />
     <Content Include="app\modules\pluginModule\plugins\geo\assets\geo.png" />
     <Content Include="app\modules\pluginModule\plugins\geo\component.js" />

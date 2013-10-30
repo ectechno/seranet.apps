@@ -9,5 +9,5 @@
   "app/modules/pluginModule/plugins/blog/component", "app/modules/pluginModule/plugins/dataport/component",
    "app/modules/pluginModule/plugins/cloud/component",
   "app/modules/pluginModule/plugins/mail/component", "app/modules/pluginModule/plugins/myretro/component",
-  "app/modules/pluginModule/plugins/geo/component"
+  "app/modules/pluginModule/plugins/geo/component", "app/modules/pluginModule/plugins/services/component"
  ]
