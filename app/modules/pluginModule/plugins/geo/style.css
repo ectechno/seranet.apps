@@ -1,0 +1,9 @@
+﻿#geo #img {
+    background:url('./assets/geo.png') no-repeat;
+    background-size:contain;
+    width:64px;
+    height:64px;
+    background-position:center;
+    margin-left: 35px;
+    margin-top:25px;
+}
